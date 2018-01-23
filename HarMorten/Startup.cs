@@ -32,10 +32,6 @@
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-
             services.AddAuthentication().AddTwitter(twitterOptions =>
             {
                 twitterOptions.ConsumerKey = Configuration["Authentication:Twitter:ConsumerKey"];
