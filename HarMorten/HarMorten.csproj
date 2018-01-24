@@ -3,10 +3,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-HarMorten-452C3895-73D8-4FFF-826B-B0D5681C82A4</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/448534e7-ad26-4220-a10d-37a0f387ebb9/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/HarMorten</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/448534e7-ad26-4220-a10d-37a0f387ebb9/resourcegroups/Default-ApplicationInsights-EastUS/providers/microsoft.insights/components/HarMorten</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\.well-known\pki-validation\8BA38537B4093B704C735798B3D2A137.txt" />
+  </ItemGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
@@ -17,6 +24,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
