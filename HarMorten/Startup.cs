@@ -62,7 +62,7 @@ namespace HarMorten
             app.UseStaticFiles();
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @".well-known")),
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"wellknown")),
                 RequestPath = new PathString("/.well-known"),
                 ServeUnknownFileTypes = true // serve extensionless file
             });

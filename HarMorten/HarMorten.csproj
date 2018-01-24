@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include=".well-known\pki-validation\8BA38537B4093B704C735798B3D2A137.txt" />
+    <Content Include="wellknown\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
